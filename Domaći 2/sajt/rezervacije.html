@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image" href="slike/logosivi.png" />
+    <link rel="stylesheet" type="text/css" href="css/rezervacije.css">
+    <title>Restoran Trpeza</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <nav class="navigacija">
+        <div class="logo">
+            <a href="index.html"><img src="slike/logo.png" alt="logo" width="180px" height="80px"></a>
+        </div>
+        <div class="meni">
+            <div><a href="index.html">Početna</a></div>
+            <div><a href="jelovnik.html">Jelovnik</a></div>
+            <div><a href="rezervacije.html">Rezervacije</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+            <div><button id="dugme-meni"><img src="slike/main-menu.png" alt="meni" width="35px" height="30px"></button></div>
+            
+        </div>
+    </nav>
+
+    <div class="burgermeni">
+        <a href="index.html">Početna</a>
+        <a href="jelovnik.html">Jelovnik</a>
+        <a href="rezervacije.html">Rezervacije</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+
+    <header>
+        <div id="naslov">
+            <h1>REZERVACIJA</h1>
+        </div>
+    </header>
+
+    <form class="formaRezervacija">
+            <label for="imeiprezime">Ime i prezime</label>
+            <input class="tekstboksovi" id="imeiprezime"  type="text" size="70">
+    
+            <label for="telefon">Telefon</label> 
+            <input class="tekstboksovi" id="telefon"  type="text" maxlength="10" size="70">
+    
+            <label for="email">Email</label>
+            <input class="tekstboksovi" id="email"  type="email" size="70">
+    
+            <label for="">Izaberite restoran</label>
+
+            <div>
+                <div class="opcije"><input id="beograd" type="radio" name="restoran" value="Beograd">
+            <label for="beograd">Beograd</label>
+            </div>
+            
+            <div class="opcije">
+                <input id="nis" type="radio" name="restoran" value="Niš">
+            <label for="nis">Niš</label>
+            </div>
+            
+            <div class="opcije">
+               <input id="novisad" type="radio" name="restoran" value="Novisad">
+            <label for="novisad">Novi Sad</label> 
+            </div>
+            
+            <div class="opcije">
+                 <input id="kragujevac" type="radio" name="restoran" value="Kragujevac">
+            <label for="kragujevac">Kragujevac</label>
+            </div>
+            </div>
+            
+           
+            <label for="brojosoba">Broj osoba</label>
+            <input class="tekstboksovi" id="brojosoba"  type="number" size="70">
+
+            <label for="izborsale">Izaberite salu</label>
+            <select  id="izborsale">
+                <option id="nepusaci" value="za nepušače">Sala za nepušače</option>
+                <option id="pusaci" value="za pušače" selected>Sala za pušače</option>
+            </select>
+
+            <label for="datum">Datum</label>
+            <input id="datum" name="datum" type="date">
+
+            <label for="napomena">Napomena</label>
+            <textarea  id="napomena" cols="60" rows="10"></textarea>
+
+            <div>
+                <button id="dugmerezervisi" type="submit" onclick="funkcijaRezervacija()">Rezerviši</button>
+                <button id="dugmeobrisi" type="reset" onclick="funkcijaObrisiSve()">Obriši sve</button>
+            </div>
+    </form>
+
+    <footer>
+        <div>
+            <h6>Lokacije</h6>
+            <p>Beograd, Kralja Petra 167 <br>
+                Niš, Živojina Mišića 15 <br>
+                Novi Sad, Carice Milice 14<br>
+                Kragujevac, Vuka Karadžića 78 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Radno vreme</h6>
+            <p> 07.30-23.30h</p>
+        </div>
+        <div>
+            <h6>Broj telefona</h6>
+            <p> 063 1568463 <br>
+                011 6568413 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Autori sajta</h6>
+            <p>
+                Antonina Mihajlović 0368/2021<br>
+                Jovana Ninković 0166/2021<br>
+                Ivana Pejović 0318/2021<br>
+            </p>
+        </div>
+
+        <div id="drusMedijiINewsletter">
+            <div id="newsletter">
+                <h6 id="naslovNewsaletter">Newsletter</h6>
+                <form>
+                    <input class="elementiFormeNewsletter" id="newsletteremail" type="text" placeholder="Unesite email" size="30">
+                    <button class="elementiFormeNewsletter" id="dugmePrijaviteSe" type="reset" onclick="funkcijaPrijaviSe()">PRIJAVITE SE</button>
+                    
+                </form>
+                <p id="newsletterUpozorenje"></p>
+            </div>
+            
+            <div id="ikonice"> 
+                <img id="facebook" src="slike/facebook.png" alt="ikonica">
+                <img id="instagram" src="slike/instagram.png" alt="ikonica">
+                <img id="twitter" src="slike/twitter2.png" alt="ikonica">
+            </div> 
+        </div>
+        
+    </footer>
+
+
+    
+    <script src="js/rezervacije.js"></script>
+
+</body>
+</html>

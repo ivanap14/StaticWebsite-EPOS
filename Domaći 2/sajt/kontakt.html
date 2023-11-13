@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image" href="slike/logosivi.png" />
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css">
+    <title>Restoran Trpeza</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav class="navigacija">
+        <div class="logo">
+            <a href="index.html"><img src="slike/logo.png" alt="logo" width="180px" height="80px"></a>
+        </div>
+        <div class="meni">
+            <div><a href="index.html">Početna</a></div>
+            <div><a href="jelovnik.html">Jelovnik</a></div>
+            <div><a href="rezervacije.html">Rezervacije</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+            <div><button id="dugme-meni"><img src="slike/main-menu.png" alt="meni" width="35px" height="30px"></button></div>
+            
+        </div>
+    </nav>
+
+    <div class="burgermeni">
+        <a href="index.html">Početna</a>
+        <a href="jelovnik.html">Jelovnik</a>
+        <a href="rezervacije.html">Rezervacije</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+
+    
+    <header>
+        <div id="naslov">
+            <h1>KONTAKT STRANA</h1>
+        </div>
+    </header>
+
+    <div id="sadrzaj">
+        <div id="prviel">
+            <img src="slike/location-icons.png" alt="ikonica">
+            <h1>Lokacija</h1>
+            <p>Beograd, Kralja Petra 167 <br>
+                Niš, Živojina Mišića 15 <br>
+                Novi Sad, Carice Milice 14<br>
+                Kragujevac, Vuka Karadžića 78 <br>
+            </p>
+        </div>
+        <div id="drugiel">
+            <img src="slike/clock-icons.png" alt="ikonica">
+            <h1>Radno vreme</h1>
+            <p>
+                07.30-23.30h
+            </p>
+        </div>
+        <div id="treciel">
+            <img src="slike/phone_icons.png" alt="ikonica">
+            <h1>Telefon</h1>
+            <p>
+                063 1568463 <br>
+                011 6568413 <br>
+            </p>
+        </div>
+        <div id="cetvrtiel">
+            <img src="slike/message-icons.png" alt="ikonica">
+            <h1>Email</h1>
+            <p>
+                restorantrpeza@gmail.com
+            </p>
+        </div>
+    </div>
+
+
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11329.593775673055!2d20.4752233!3d44.7726817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70576248bf79%3A0xadaf5cff042d3bd0!2z0KTQsNC60YPQu9GC0LXRgiDQvtGA0LPQsNC90LjQt9Cw0YbQuNC-0L3QuNGFINC90LDRg9C60LAg0KPQvdC40LLQtdGA0LfQuNGC0LXRgtCwINGDINCR0LXQvtCz0YDQsNC00YM!5e0!3m2!1ssr!2srs!4v1699550111995!5m2!1ssr!2srs" width="600" height="450" ></iframe>
+
+
+    <footer>
+        <div>
+            <h6>Lokacije</h6>
+            <p>Beograd, Kralja Petra 167 <br>
+                Niš, Živojina Mišića 15 <br>
+                Novi Sad, Carice Milice 14<br>
+                Kragujevac, Vuka Karadžića 78 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Radno vreme</h6>
+            <p> 07.30-23.30h</p>
+        </div>
+        <div>
+            <h6>Broj telefona</h6>
+            <p> 063 1568463 <br>
+                011 6568413 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Autori sajta</h6>
+            <p>
+                Antonina Mihajlović 0368/2021<br>
+                Jovana Ninković 0166/2021<br>
+                Ivana Pejović 0318/2021<br>
+            </p>
+        </div>
+
+        <div id="drusMedijiINewsletter">
+            <div id="newsletter">
+                <h6 id="naslovNewsaletter">Newsletter</h6>
+                <form>
+                    <input class="elementiFormeNewsletter" id="newsletteremail" type="text" placeholder="Unesite email" size="30">
+                    <button class="elementiFormeNewsletter" id="dugmePrijaviteSe" type="reset" onclick="funkcijaPrijaviSe()">PRIJAVITE SE</button>
+                    
+                </form>
+                <p id="newsletterUpozorenje"></p>
+            </div>
+            
+            <div id="ikonice"> 
+                <img id="facebook" src="slike/facebook.png" alt="ikonica">
+                <img id="instagram" src="slike/instagram.png" alt="ikonica">
+                <img id="twitter" src="slike/twitter2.png" alt="ikonica">
+            </div> 
+        </div>
+        
+    </footer>
+    
+    <script src="js/kontakt.js"></script>
+
+</body>
+</html>

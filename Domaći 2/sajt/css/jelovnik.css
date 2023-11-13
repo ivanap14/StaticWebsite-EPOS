@@ -1,0 +1,308 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+
+body{
+     margin-top: 0px; 
+}
+
+.navigacija{
+    background-color: rgb(77, 73, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0px;
+}
+
+.meni{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.meni a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.meni a:hover{
+    border-bottom: solid 2px yellow;
+}
+
+#dugme-meni{
+    background-color:  rgb(77, 73, 73);
+    border: rgb(77, 73, 73);
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: relative;
+    left: 10px;           
+    margin-right: 10px;
+}
+
+
+
+@media(max-width:500px){
+    .meni a{
+        display: none;
+    }
+
+    #dugme-meni{
+        display: inline;
+    }
+}
+
+@media(max-width:700px){
+    .navigacija{
+        padding: 0px 0px;
+    }
+
+    .logo img{
+        width: 80px;
+        height: 35px;
+        padding-left: 2px;
+    }
+
+    .meni a{
+        font-size: 0.8em;
+    }
+}
+
+
+.burgermeni{
+    background-color: rgb(243, 225, 110);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 100;
+    margin-top: 0px;
+
+    
+}
+.burgermeni a{
+   
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 2px;
+    padding-left: 150px;
+    padding-right: 1500px;
+
+}
+
+@media(max-width:400px){
+    .burgermeni a{
+        padding-left: 100px;
+    }
+}
+
+
+
+header{
+    background: url(../slike/pozadinahrana.jpeg) center;
+    display: flex;
+    justify-content: center;
+    max-height: 360px;
+}
+
+#naslov{
+    color: white;
+    width: 300px;
+    height: 300px;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#naslov h1{
+    padding-top: 50px;
+    font-size: 3em;
+    
+}
+
+@media (max-width:800px){
+    #naslov{
+        width: 150px;
+        height: 150px;
+    }
+
+    #naslov h1{
+        font-size: 2em;
+        padding-top: 0px;
+    }
+    #naslov h3{
+        font-size: 1em;
+    }
+
+}
+
+
+
+.sadrzaj {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    background-color: antiquewhite;
+}
+
+#deo1{
+    padding-top: 25px ;
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#deo2{
+    padding-top: 25px ;
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#deo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#deo2{
+    display: flex;
+    flex-direction: row;
+}
+
+#deo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width:1400px){
+    #deo1{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+
+
+    #deo2{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+
+}
+
+
+
+footer{
+    background-color: gray;
+    display: flex;
+   justify-content: space-around;
+   align-items: stretch;
+   flex-wrap: wrap;
+}
+
+footer div{
+    padding: 5px 10px;
+}
+
+footer #ikonice{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   
+
+}
+
+footer #ikonice img{
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+    
+}
+
+footer h6{
+    font-size: 1em;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgb(233, 233, 162);
+    padding-top: 0px;
+}
+
+#naslovNewsaletter{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#drusMedijiINewsletter{
+    padding-top: 30px;
+}
+
+.elementiFormeNewsletter{
+    height: 30px;
+    padding: 0px 0px;
+    border: solid 2px;
+}
+
+#dugmePrijaviteSe{
+    background-color: rgb(150, 197, 188);
+    font-weight: bold;
+    padding: 2px 2px;
+}
+
+#newsletteremail{
+    font-size: 1em;
+}
+
+footer form{
+    display: flex;
+}
+
+#dugmePrijaviteSe:hover{
+    background-color: rgb(42, 142, 165);
+    transform: scale(1.1, 1.1);
+}
+
+#newsletterUpozorenje{
+    color: red;
+}
+
+@media (max-width:500px){
+    footer{
+       flex-wrap: wrap;
+    }
+    #dugmePrijaviteSe{
+        font-size: 0.8em;
+        padding: 0px 0px;
+    }
+    
+    #newsletteremail{
+        font-size: 0.8em;
+    }
+
+}

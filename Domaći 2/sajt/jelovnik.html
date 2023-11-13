@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image" href="slike/logosivi.png" />
+    <link rel="stylesheet" type="text/css" href="css/jelovnik.css">
+    <title>Restoran Trpeza</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav class="navigacija">
+        <div class="logo">
+            <a href="index.html"><img src="slike/logo.png" alt="logo" width="180px" height="80px"></a>
+        </div>
+        <div class="meni">
+            <div><a href="index.html">Početna</a></div>
+            <div><a href="jelovnik.html">Jelovnik</a></div>
+            <div><a href="rezervacije.html">Rezervacije</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+            <div><button id="dugme-meni"><img src="slike/main-menu.png" alt="meni" width="35px" height="30px"></button></div>
+            
+        </div>
+    </nav>
+
+    <div class="burgermeni">
+        <a href="index.html">Početna</a>
+        <a href="jelovnik.html">Jelovnik</a>
+        <a href="rezervacije.html">Rezervacije</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <header>
+        <div id="naslov">
+            <h1>JELOVNIK</h1>
+            <h3>Cene u dinarima:</h3>
+        </div>
+    </header>
+
+    <div class="sadrzaj">
+
+        <div id="deo1">
+            <div id="predjela">
+                <h1>Predjela:</h1>
+                <p> Miks sireva................................................550 <br>
+                    Pohovani kačkavalj...................................360 <br>
+                    Mešano predjelo.......................................600 <br>
+                    Ruska salata.............................................400 <br>
+                </p>
+            </div>
+            <div id="salate">
+                <h1>Salate:</h1>
+                <p>
+                    Šopska salata..........................................380 <br>
+                    Paradajz..................................................250 <br>
+                    Grčka salata............................................300 <br>
+                    Vitaminska...............................................350 <br>
+                </p>
+            </div>
+            <div id="supeicorbe">
+                <h1>Supe i čorbe</h1>
+                <p>
+                    Povrćna supa...........................................270 <br>
+                    Paradajz supa..........................................290 <br>
+                    Pileća čorba.............................................300 <br>
+                    Juneća čorba...........................................320 <br>
+                </p>
+            </div>
+        </div>
+
+        <div id="deo2">
+            <div id="glavnajela">
+                <h1>Glavna jela:</h1>
+                <p> Pileći file...................................................1100 <br>
+                    Karađorđeva............................................1200 <br>
+                    Sarma........................................................600 <br>
+                    Losos.......................................................1800 <br>
+                </p>
+            </div>
+            <div id="deserti">
+                <h1>Deserti:</h1>
+                <p>
+                    Reforma....................................................380 <br>
+                    Krempita...................................................300 <br>
+                    Čizkejk......................................................350 <br>
+                    Čoko-oranž kolač......................................350 <br>
+                </p>
+            </div>
+            <div id="pica">
+                <h1>Pića:</h1>
+                <p>
+                    Kafa..........................................................200 <br>
+                    Negazirani sokovi.....................................250 <br>
+                    Gazirani sokovi.........................................300 <br>
+                    Kisela voda...............................................200 <br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <h6>Lokacije</h6>
+            <p>Beograd, Kralja Petra 167 <br>
+                Niš, Živojina Mišića 15 <br>
+                Novi Sad, Carice Milice 14<br>
+                Kragujevac, Vuka Karadžića 78 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Radno vreme</h6>
+            <p> 07.30-23.30h</p>
+        </div>
+        <div>
+            <h6>Broj telefona</h6>
+            <p> 063 1568463 <br>
+                011 6568413 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Autori sajta</h6>
+            <p>
+                Antonina Mihajlović 0368/2021<br>
+                Jovana Ninković 0166/2021<br>
+                Ivana Pejović 0318/2021<br>
+            </p>
+        </div>
+
+        <div id="drusMedijiINewsletter">
+            <div id="newsletter">
+                <h6 id="naslovNewsaletter">Newsletter</h6>
+                <form>
+                    <input class="elementiFormeNewsletter" id="newsletteremail" type="text" placeholder="Unesite email" size="30">
+                    <button class="elementiFormeNewsletter" id="dugmePrijaviteSe" type="reset" onclick="funkcijaPrijaviSe()">PRIJAVITE SE</button>
+                    
+                </form>
+                <p id="newsletterUpozorenje"></p>
+            </div>
+            
+            <div id="ikonice"> 
+                <img id="facebook" src="slike/facebook.png" alt="ikonica">
+                <img id="instagram" src="slike/instagram.png" alt="ikonica">
+                <img id="twitter" src="slike/twitter2.png" alt="ikonica">
+            </div> 
+        </div>
+        
+    </footer>
+
+
+    <script src="js/jelovnik.js"></script>
+</body>
+</html>

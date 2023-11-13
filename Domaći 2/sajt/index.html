@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image" href="slike/logosivi.png" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Restoran Trpeza</title>
+
+    <!-- povezivanje sa JQuery bibliotekom -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <nav class="navigacija">
+        <div class="logo">
+            <a href="index.html"><img src="slike/logo.png" alt="logo" width="180px" height="80px"></a>
+        </div>
+        <div class="meni">
+            <div><a href="index.html">Početna</a></div>
+            <div><a href="jelovnik.html">Jelovnik</a></div>
+            <div><a href="rezervacije.html">Rezervacije</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+            <!-- dugme za burger meni -->
+            <div><button id="dugme-meni"><img src="slike/main-menu.png" alt="meni" width="35px" height="30px"></button></div>
+        </div>
+    </nav>
+
+    <!-- stavke burger menija -->
+    <div class="burgermeni">
+        <a href="index.html">Početna</a>
+        <a href="jelovnik.html">Jelovnik</a>
+        <a href="rezervacije.html">Rezervacije</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+
+    <header>
+        <div id="ilustracija"><img src="slike/KitchenChef.png" alt="ilustracija"></div>
+        <div id="nasloviopis">
+            <h1>Iskusite potpuni gastronomski užitak!</h1>
+            <p>Istražite naš autentičan meni tradicionalnih, ali i modernih specijaliteta i prepustite se rapsodiji ukusa koju ćemo Vam prirediti.</p>
+        </div>
+    </header>
+
+    <div class="sadrzaj">
+       <div>
+            <img src="slike/predjela.jpg" alt="slika">
+            <h2>Predjela</h2>
+            <a href="jelovnik.html">detaljnije</a>
+        </div>
+        <div>
+            <img src="slike/glavnojelo.jpeg" alt="slika">
+            <h2>Glavna jela</h2>
+            <a href="jelovnik.html">detaljnije</a>
+        </div>
+        <div>
+            <img src="slike/kolac.jpg" alt="slika">
+            <h2>Deserti</h2>
+            <a href="jelovnik.html">detaljnije</a>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div>
+            <h6>Lokacije</h6>
+            <p>Beograd, Kralja Petra 167 <br>
+                Niš, Živojina Mišića 15 <br>
+                Novi Sad, Carice Milice 14<br>
+                Kragujevac, Vuka Karadžića 78 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Radno vreme</h6>
+            <p> 07.30-23.30h</p>
+        </div>
+        <div>
+            <h6>Broj telefona</h6>
+            <p> 063 1568463 <br>
+                011 6568413 <br>
+            </p>
+        </div>
+        <div>
+            <h6>Autori sajta</h6>
+            <p>
+                Antonina Mihajlović 0368/2021<br>
+                Jovana Ninković 0166/2021<br>
+                Ivana Pejović 0318/2021<br>
+            </p>
+        </div>
+
+        <div id="drusMedijiINewsletter">
+            <div id="newsletter">
+                <h6 id="naslovNewsaletter">Newsletter</h6>
+                <form>
+                    <input class="elementiFormeNewsletter" id="newsletteremail" type="text" placeholder="Unesite email" size="30">
+                    <button class="elementiFormeNewsletter" id="dugmePrijaviteSe" type="reset" onclick="funkcijaPrijaviSe()">PRIJAVITE SE</button>
+                    
+                </form>
+                <p id="newsletterUpozorenje"></p>
+            </div>
+            
+            <div id="ikonice"> 
+                <img id="facebook" src="slike/facebook.png" alt="ikonica">
+                <img id="instagram" src="slike/instagram.png" alt="ikonica">
+                <img id="twitter" src="slike/twitter2.png" alt="ikonica">
+            </div> 
+        </div>
+        
+    </footer>
+
+    <!-- povezivanje sa .js fajlom -->
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
